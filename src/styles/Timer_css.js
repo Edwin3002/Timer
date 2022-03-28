@@ -8,24 +8,46 @@ padding: 0;
     text-align: center;
 `
 export let TimerC = styled.div`
-background-color: red;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 margin-top: 50px;
 `
+export let Card = styled.div`
+width: 8%;
+height: 100%;
+margin: 10px;
+@media (max-width: 1100px) {
+    width: 18%;
+
+  }
+`
 export let TimerCard = styled.div`
+border-bottom: 2px solid #191a23;
+border-radius: 10px;
+height: 8rem;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+text-align: center;
+align-items: center;
+
+background-color: #32374e;
 text-decoration: line-through #32374e;
 text-align: center;
 width: 100%;
-font-size: 200%;
+font-size: 500%;
 color: hsl(345, 95%, 68%);
-    background-color: #32374e;
-    border-bottom: 2px solid #191a23;
+  @media (max-width: 1100px) {
+      font-size: 200%;
+      height: 4rem;
+  }
 
 `
 export let TextCard = styled.p`
     color: #8586a8;
+    text-align: center;
 `
 export let Foot = styled.footer`
 background-image: url(https://i.ibb.co/kBzSp56/footer.png);
@@ -38,6 +60,7 @@ flex-wrap: wrap;
 align-content: center;
 `
 export let Redes = styled.ul`
+font-size: 200%;
 width: 50%;
 margin: auto;
 display: flex;
@@ -45,4 +68,9 @@ flex-wrap: wrap;
 justify-content: space-evenly;
     color: #8586a8;
     list-style: none;
+    &:hover {
+
+      color: white;
+    }
+
 `

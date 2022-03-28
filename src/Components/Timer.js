@@ -1,55 +1,58 @@
 import React from 'react'
-import { Foot, Redes, TimerCard, TimerC, Titulo, TextCard } from '../styles/Timer_css'
+import { Foot, Redes, TimerCard, TimerC, Titulo, TextCard, Card } from '../styles/Timer_css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const Timer = () => {
+export const Timer = ({timerD, timerH, timerM, timerS}) => {
+    
     return (
         <div>
 
             <Titulo>
                 We're launching soon
-            </Titulo>
+            </Titulo>   
             <TimerC>
-                <div>
+                <Card>
 
                     <TimerCard>
-                        08
+                        {timerD}
                     </TimerCard>
                     <TextCard>Days</TextCard>
-                </div>
-                <div>
+                </Card>
+                <Card >
 
                     <TimerCard>
-                        23
+                    {timerH}
+
                     </TimerCard>
                     <TextCard>Hours</TextCard>
-                </div>
-                <div>
+                </Card>
+                <Card >
 
                     <TimerCard>
-                        55
+                    {timerM}
+
                     </TimerCard>
                     <TextCard>Minutes</TextCard>
-                </div>
-                <div>
+                </Card>
+                <Card>
 
-                    <TimerCard>
-                        08
+                    <TimerCard className='seconds'>
+                    {timerS}
                     </TimerCard>
                     <TextCard>Seconds</TextCard>
-                </div>
+                </Card>
             </TimerC>
             <Foot>
                 <Redes>
                     <li>
-                        <i class="bi bi-facebook"></i>
+                        <i className="bi bi-facebook"></i>
                     </li>
                     <li>
-                        <i class="bi bi-youtube"></i>
+                        <i className="bi bi-youtube" ></i>
                     </li>
                     <li>
-                        <i class="bi bi-instagram"></i>
+                        <i className="bi bi-instagram"></i>
                     </li>
                 </Redes>
 
